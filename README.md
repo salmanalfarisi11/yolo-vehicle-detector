@@ -32,6 +32,8 @@ A high-performance, object detection pipeline built on **Ultralytics YOLOv12-s**
 
 This detector is tailored for essential traffic analytics tasks—vehicle counting, classification, and monitoring of Cars, Motorcycles, and Trucks in road scenarios.
 
+[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtube.com/shorts/HRZQ_QOSOSo?si=8rZVTkii-6SOsM9T)
+
 ---
 
 ## Features
@@ -89,11 +91,12 @@ yolo-vehicle-detector/
    cd yolo-vehicle-detector
   ```
   
-2. **Install system dependencies**
-   ```bash
-   sudo apt update
-   sudo apt install -y python3-venv python3-pip
-   ```
+2. **Install system dependencies**  
+
+    ```bash
+    sudo apt update
+    sudo apt install -y python3-venv python3-pip
+    ```
 
 3. **Create & activate a Python virtual environment**
 
