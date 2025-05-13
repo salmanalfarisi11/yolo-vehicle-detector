@@ -1,0 +1,6 @@
+# data.yaml
+train: /home/salman/yolo-vehicle-detector/data/images_labels/images
+val:   /home/salman/yolo-vehicle-detector/data/images_labels/images
+nc: 3
+names: ['car', 'motorcycle', 'truck']
+

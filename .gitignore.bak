@@ -1,0 +1,16 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Data & outputs
+data/raw_videos/
+data/images_labels/
+results/runs/
+results/outputs/
+
+# Model weights
+models/*.pt
+
+# Misc
+.env
+.DS_Store
