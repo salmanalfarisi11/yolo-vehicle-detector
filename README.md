@@ -1,6 +1,6 @@
 # YOLO Vehicle Detector
 
-Custom object detection pipeline for **Cars**, **Motorcycles**, and **Trucks** using **YOLOv12-s**.
+Custom object detection pipeline for **Cars**, **Motorcycles**, and **Trucks** in pre-recorded traffic videos, built on **YOLOv12-s**.
 
 ---
 
@@ -23,13 +23,14 @@ Custom object detection pipeline for **Cars**, **Motorcycles**, and **Trucks** u
 
 ## Project Overview
 
-This repository implements a **YOLOv12-s** based detector to identify vehicles in traffic videos. It is optimized for:
+A high-performance, object detection pipeline built on **Ultralytics YOLOv12-s** to accurately identify Cars, Motorcycles, and Trucks in pre-recorded traffic video footage. Key project highlights:
 
-* **High accuracy**: mAP50 ≥ 0.99, mAP50-95 ≥ 0.82
-* **Robustness**: handles motion blur, variable lighting, portrait orientation
-* **Efficiency**: mixed-precision (FP16) and rectangular multi-scale training
+* **State-of-the-art accuracy**: achieves mAP@0.5 ≥ 0.99 and mAP@0.5:0.95 ≥ 0.82 on a custom 80-image dataset
+* **Robustness**: resilient to motion blur, challenging lighting conditions, and both portrait/landscape orientations
+* **Efficiency**: leverages mixed-precision (FP16), rectangular multi-scale training, and cosine learning rate scheduling
+* **Advanced augmentations**: includes mosaic, mixup, and copy-paste to enhance data diversity
 
-Applications include traffic monitoring, smart city analytics, and autonomous vehicle research.
+This detector is tailored for essential traffic analytics tasks—vehicle counting, classification, and monitoring of Cars, Motorcycles, and Trucks in road scenarios.
 
 ---
 
@@ -70,7 +71,6 @@ yolo-vehicle-detector/
 ├── scripts/
 │   ├── train.py            # Training script
 │   └── infer.py            # Inference script
-├── notebooks/              # Jupyter notebooks for EDA & evaluation
 ├── results/
 │   ├── runs/               # Training logs and checkpoints
 │   └── outputs/            # Inference videos and label exports
@@ -89,11 +89,11 @@ yolo-vehicle-detector/
    cd yolo-vehicle-detector
   ```
   
-2. **Install system dependencies**  
+2. **Install system dependencies**
    ```bash
    sudo apt update
    sudo apt install -y python3-venv python3-pip
-  ```
+   ```
 
 3. **Create & activate a Python virtual environment**
 
