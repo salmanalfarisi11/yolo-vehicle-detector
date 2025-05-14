@@ -32,7 +32,7 @@ A high-performance, object detection pipeline built on **Ultralytics YOLOv12-s**
 
 This detector is tailored for essential traffic analytics tasks—vehicle counting, classification, and monitoring of Cars, Motorcycles, and Trucks in road scenarios.
 
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtube.com/shorts/HRZQ_QOSOSo?si=8rZVTkii-6SOsM9T)
+[![Watch the demo](https://img.youtube.com/vi/HRZQ_QOSOSo/hqdefault.jpg)](https://youtube.com/shorts/HRZQ_QOSOSo?si=8rZVTkii-6SOsM9T)
 
 ---
 
@@ -89,16 +89,15 @@ yolo-vehicle-detector/
    ```bash
    git clone https://github.com/salmanalfarisi11/yolo-vehicle-detector.git
    cd yolo-vehicle-detector
-  ```
-  
+   ```
 
-2. **Install system dependencies**  
+
+2.  **Install system dependencies** 
 
     ```bash
     sudo apt update
-    sudo apt install -y python3-venv python3-pip
+    sudo apt install -y python3-venv python3-pip ffmpeg
     ```
-
 
 3. **Create & activate a Python virtual environment**
 
@@ -169,7 +168,7 @@ After training on 80 images for 120 epochs with advanced augmentation and FP16:
 | mAP\@0.5      | 0.990 |
 | mAP\@0.5:0.95 | 0.817 |
 
-Visualize training curves in `results/runs/road_custom_v12s_max/plots`.
+Visualize training curves in `results/runs/road_custom_v12s_max`.
 
 ---
 
